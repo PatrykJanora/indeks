@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1_Lab2</title>
+    <style>
+       *{
+        box-sizing: border-box;
+       } 
+       body{
+        margin: 0;
+        padding: 0 0;
+        font-family: 'Inter', sans-serif;
+       }
+
+       header{
+        position: sticky;
+        width: 100;
+        background-color: #fffefe;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 15px 3px #0f0f0f;
+        padding: 20px 120px ;
+        z-index: 100;
+       }
+       header div h2{
+        padding: 0;
+        color: #468992;
+
+
+       }
+       header nav{
+        display: block;
+       }
+       header nav ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        gap: 25px;
+        text-decoration: none;
+       }
+       header nav ul a{
+        text-decoration: none;
+        color: #468992;
+        font-family:  'Arial Narrow', sans-serif;
+        font-size: 19px;
+       }
+       section img{
+        display: block;
+        height: 100%;
+        padding: 50px;
+       }
+       section h1{
+        font-size: 50px;
+        
+       }
+       section:first-child{
+        height: calc(100vh - 90px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div>
+                <h2>Patryk Janora</h2>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./indeks.html">Strona główna</a>
+                </li>
+                <li><a href="./seriale.html">Ulubione seriale</a></li>
+                <li><a href="./polskieersiale.html">Ulubione polskie seriale</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h1>
+                    <span>Patryk Janora</span> strona personalna
+                </h1>
+
+                <span>Cześć! Jestem Patryk i 
+                    <span>nie umiem programować</span></span>
+            </div>
+            <img src="main.jpg" alt="">
+        </section>
+        <article>
+            <h4>Kilka słów o mnie</h4>
+            <p>Jestem absolwentem <b>Technikum nr 4 w Mielcu</b>, w wolnych chwilach lubie uczyć się nowych rzeczy. 
+            </p>
+        </article>
+        <!--zadanie2-->
+        <article>
+            <h4>Moje ulubione seriale</h4>
+            <ul>
+              <li>Breaking Bad</li>
+              <li>Narcos</li>
+              <li>Peaky Blinders</li>
+            </ul>
+          </article>
+      
+          <article>
+            <h4>
+              Ranking najlepszych polskich seriali
+            </h4>
+            <ol>
+              <li>Wiedźmin</li>
+              <li>Znaki</li>
+              <li>Wielka woda</li>
+            </ol>
+          </article>
+          <!--zadanie3-->
+          <article>
+            <h4>Moje ulubione seriale</h4>
+            <ul>
+              <li>
+                
+                <a href="https://www.filmweb.pl/serial/Breaking+Bad-2008-430668">Breaking Bad</a>
+              </li>
+              <li>
+                
+                <a href="https://www.filmweb.pl/serial/Narcos-2015-680486">
+                  Narcos</a>
+              </li>
+              <li>
+                <a href="https://www.filmweb.pl/serial/Peaky+Blinders-2013-680981">
+                  Peaky Blinders</a>
+              </li>
+            </ul>
+          </article>
+          <!--zadanie4-->
+          <article>
+            <h4>Moja ścieżka nauki</h4>
+      
+            <table border="">
+              <tr>
+                <th>Data</th>
+                <th>Szkoła</th>
+              </tr>
+              <tr>
+                <td>2022 - obecnie</td>
+                <td>WSIZ</td>
+              </tr>
+              <tr>
+                <td>2017 - 2022</td>
+                <td>Technikum nr 4</td>
+              </tr>
+              <tr>
+                <td>2014 - 2017</td>
+                <td>Gimnazjum nr 111</td>
+              </tr>
+            </table>
+          </article>
+          <!--zadanie4.1-->
+          <article>
+            
+            <h4>Pusta tabela</h4>
+            
+            <table border width="100">
+              <tr>
+                <td></td>
+                <td rowspan="2"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+      
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+      
+                <td rowspan="2" colspan="2"></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td colspan="2"></td>
+                <td></td>
+              </tr>
+            </table>
+          </article>
+          <!--zadnie5-->
+          <div>
+            <img src="https://static.antyweb.pl/wp-content/uploads/2020/02/25073926/najpopularniejsze-filmy-netflix-polska-600x318.jpg" alt="">
+          </div>
+            
+           <!-- ZADANIE 8 -->
+
+      <h4>Your news form</h4>
+      <form action="." method="post">
+        <div>
+          <label>Name: </label>
+          <input type="text" required />
+        </div>
+        <div>
+          <label>Email: </label>
+          <input type="email" required />
+        </div>
+        <div>
+          <label>Do you want to get news daily? </label>
+          <input type="checkbox" checked />
+        </div>
+        <div>
+          <label>Do you want to get 10% dicount? </label>
+          <input type="radio" />
+        </div>
+        <div>
+          <label>Select first news day</label>
+          <input type="date" requiredq />
+        </div>
+        <div>
+          <input type="submit" value="Subscribe!" />
+        </div>
+      </form>
+    </div>
+    <aside>Menu boczne</aside>
+  </article>
+          
+    
+    
+    
+    
+</body>
+</html>
